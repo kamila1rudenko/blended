@@ -50,25 +50,25 @@
 // "Вибачте, але ви маєте ввести значення від 1 до 4 включно".
 // Значення змінної result виведіть в консоль.
 
-let numb = prompt("введіть число від 1 до 4");
-numb = Number(numb);
-let result;
-switch (numb) {
-    case 1:
-        result = 'зима';
-        break;
-    case 2:
-        result = 'весна';
-        break;
-    case 3:
-        result = 'літо';
-        break;
-    case 4:
-        result = 'осінь';
-        break;
+// let numb = prompt("введіть число від 1 до 4");
+// numb = Number(numb);
+// let result;
+// switch (numb) {
+//     case 1:
+//         result = 'зима';
+//         break;
+//     case 2:
+//         result = 'весна';
+//         break;
+//     case 3:
+//         result = 'літо';
+//         break;
+//     case 4:
+//         result = 'осінь';
+//         break;
 
-    default:
-        result = "Вибачте, але ви маєте ввести значення від 1 до 4 включно";
-        break;
-}
-console.log(result);
+//     default:
+//         result = "Вибачте, але ви маєте ввести значення від 1 до 4 включно";
+//         break;
+// }
+// console.log(result);
