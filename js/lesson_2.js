@@ -141,6 +141,12 @@ const user = {
 //   carColor: "black",
 // };
 // console.log(getBool(obj, "name"));
+function getBool(obj, key) {
+  return key in obj;
+}
+
+
+
 
 // Створіть функцію multiplyNumeric(obj),
 // яка множить всі числові властивості об'єкта obj на 2
@@ -152,6 +158,18 @@ const user = {
 //   title: "My menu",
 // };
 // console.log(multiplyNumeric(menu));
+function multiplyNumeric(obj) {
+  for (let key in obj) {
+    if (typeof obj[key] === "number") {
+      obj[key] *= 2;
+    }
+  }
+  return obj;
+}
+
+
+
+
 
 
 // Напиши функцію яка приймає массив чисел і повертає новий массив,
@@ -161,8 +179,23 @@ const user = {
 
 // console.log(uniqueArray(numbers));
 
+function uniqueArray(arr) {
+  const result = [];
+  for (let num of arr) {
+    if (!result.includes(num)) {
+      result.push(num);
+    }
+  }
+  return result;
+}
+
+
+
 
 // задачка )) почему 4 ?
 // const a = [1, 2, 3, 4, 5, 6, 7];
 // const b = a.slice(3, 6).push(4);
 // console.log("b =", b);
+// const b = a.slice(3, 6);
+b.push(4);
+теперь b === [4, 5, 6, 4]
